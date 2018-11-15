@@ -8,7 +8,7 @@ URL = 'localhost:{port}'.format(port=PORT)
 
 buffer_frame = [] 
 #if request進來 :
-image = requests.get('140.114.79.179',timeout = 0.1)
+image = requests.get('',timeout = 0.1)
 for files in image:
     if ".jpg" in files:
         print(files)
