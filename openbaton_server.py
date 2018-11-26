@@ -12,7 +12,7 @@ dict={}
 IPlist=[]
 serviceName=''
 while True:
-	data, addr = conn.recvfrom(65536)
+	data, addr = server.recvfrom(65536)
 	try: #save the ip
 		x = int(data)
 		dict[serviceName].append(addr)
